@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+
+}
+
+.row {
+  display: flex;
+  width: 60%;
+  margin: 1.25rem auto;
+}
+
+.col {
+  width: 33%;
+}
+
+
+/* Header */
+.preheader {
+  background: linear-gradient(90deg, #098F91 0%, #13729B 100%);
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.preheader p {
+  margin: 0;
+  padding-right: 0.75rem;
+  border-right: 2px solid #fff;
+  font-size: 0.85rem;
+}
+
+.preheader a {
+  text-decoration: none;
+  margin-left: 1.25rem;
+  color: #fff;
+  font-size: 00.85rem;
+  font-weight: 600;
+}
+
+
+
+.navbar {
+  padding: .75rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .container .logo {
+  width: 20%;
+}
+
+.navbar .container .logo img {
+  width: 50%;
+}
+
+.navbar .container .menu {
+  width: 33%;
+}
+
+.navbar .container .menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar .container .menu ul a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #13729B;
+}
+
+.navbar .container .menu ul a:hover {
+  color: #098F91;
+}
+
+.navbar .container .appointment-btn {
+  width: 33%;
+  text-align: center;
+}
+
+.navbar .container .appointment-btn a {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #676767;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #13729B;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0.75rem 1.75rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 58%;
+  margin-left: auto;
+}
+
+.navbar .container .appointment-btn a:hover {
+  color: #fff;
+  background-color: #13729B;
+}
+
+/* Header End */
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .container {
+  display: flex;
+}
+
+.banner-content {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.banner-content h2 {
+  color: #13729B;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.banner-content a,
+.book {
+  color: #fff;
+  background-color: #13729B;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #13729B;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.banner-content a:hover,
+.book:hover {
+  color: #13729B;
+  background-color: #fff;
+}
+
+/* Banner End*/
+
+/* About */
+#about {
+  padding: 2.25rem 0;
+}
+
+#about .about-title {
+  width: 50%;
+  border-right: 1px solid #e2e2e2;
+}
+
+#about .about-title h2 {
+  color: #0182CD;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#about .about-title p {
+  font-size: 1.75rem;
+  color: #000;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+#about .about-desc {
+  width: 60%;
+  padding-left: 5%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  text-align: justify;
+}
+
+/* About End */
+/* Services */
+#services {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../public/images/doctor.jpg);
+  background-position: center top !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding: 2.25rem 0;
+}
+
+#services h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.ourServices {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ourServices .card {
+  width: 50%;
+  margin: 1.25rem 0;
+}
+
+.ourServices .card img {
+  width: 20%;
+  filter: invert(1);
+  border: 1px solid #000;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.ourServices .card h3 {
+  color: #fff;
+  margin-left: 1.25rem;
+}
+
+/* Services End */
+/* Appointment */
+#makeAnAppointment {
+  margin: 1.75rem 0;
+}
+
+#makeAnAppointment h2 {
+  color: #0182CD;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.appointment-from {
+  margin: 2.25rem 0;
+}
+
+.appointment-from h5 {
+  margin: 0;
+}
+
+.appointment-from input,
+.appointment-from textarea,
+.appointment-from select {
+  width: 95%;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.appointmentText {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Appointment End */
+
+/* Footer */
+footer {
+  border-top: 5px solid #0182CD;
+}
+
+.topFooter {
+  display: flex;
+  align-items: start;
+  margin: 1.25rem auto;
+}
+
+.topFooter div {
+  width: 33%;
+  text-align: center;
+}
+
+.topFooter h4 {
+  font-size: 1.5rem;
+}
+
+.innerFooterAddress {
+  width: 50% !important;
+  margin: auto;
+  text-align: start !important;
+}
+
+.innerFooterAddress p {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.innerFooterAddress a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+.innerFooterAddress ul {
+  list-style: none;
+}
+
+.innerFooterAddress ul li {
+  margin-bottom: .50rem;
+}
+
+.footerQuickLinks {
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+
+.socialLinks a {
+  font-size: 1.75rem;
+  margin: 0 0.5rem;
+}
+
+.bottomFooter {
+  background: linear-gradient(90deg, #098F91 0%, #13729B 100%);
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+/* Footer End */
